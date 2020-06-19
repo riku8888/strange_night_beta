@@ -1,0 +1,157 @@
+.wrapper {
+  position: relative;
+  overflow-x: hidden;
+
+}
+
+.navbar .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.navbar .nav-item.active {
+  border-left: #fff 3px solid;
+}
+
+
+#home-heading {
+  position: relative;
+  min-height: 100vh;
+  background: url('../img/blue-03.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+#home-heading p {
+  line-height: 250%;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#video-play {
+  position: relative;
+  min-height: 200px;
+  background: url('../img/media.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 -300px;
+  text-align: center;
+  color: #fff;
+}
+
+
+
+
+
+
+#faq .card-body,
+#faq .card-header {
+  background: #333;
+}
+
+#main-footer {
+  background: #000;
+  color: #fff;
+}
+
+
+
+/* Main slider part */
+
+.slider {
+  width: 100%;
+  height: 100vh;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.rgbKineticSlider {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+
+}
+
+.rgbKineticSlider canvas {
+  /* position: absolute; */
+  position: relative;
+  /* display: block; */
+  display: flex;
+  top: 50vh;
+  left: 50vw;
+}
+
+#outstanding-text {
+  position: absolute;
+  top: 30vh;
+  left: 30vh;
+  z-index: 1;
+}
+
+#outstanding-text-mobile {
+  z-index: 2;
+  position: absolute;
+  top: 30vh;
+  left: 10vh;
+  display: none;
+}
+#outstanding-text-mobile h1{
+  font-family: "Monument Extended";
+  font-weight: 100;
+  font-size: 3rem;
+  color: red;
+  
+}
+
+.slider nav a {
+  text-decoration: none;
+  position: absolute;
+  top: 46vh;
+  z-index: 1;
+  padding: 20px;
+  transition: 0.3s;
+  background: #000;
+  color: #fff;
+}
+
+
+
+.slider nav a.next {
+  right: 10vw;
+  text-decoration: none;
+}
+
+.slider nav a.prev {
+  left: 10vw;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width:52em) {
+
+  .slider nav a{
+      top:auto;
+      bottom: 3rem;
+  }
+
+  #outstanding-text {
+    display: none;
+  }
+  #outstanding-text-mobile {
+    display: inline-block;
+  }
+} 
