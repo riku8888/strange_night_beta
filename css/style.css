@@ -1,10 +1,24 @@
+:root {
+  --basecolor: #f2ecd8;
+  --accentblue: #3b848c;
+  --accentred: #e32f38;
+  --subcolor: #d9cdbf;
+  --darkcolor: #260202;
+  --mainfont: ta-kotodama-r, sans-serif;
+
+  font-weight: 400;
+  
+  font-style: normal;
+}
+
 .wrapper {
   position: relative;
   overflow-x: hidden;
-
+  background-color: var(--darkcolor);
+  font-family: var(--mainfont);
 }
 
-.navbar .nav-link {
+/* .navbar .nav-link {
   font-size: 14px;
   text-transform: uppercase;
   padding-left: 1rem !important;
@@ -13,17 +27,17 @@
 
 .navbar .nav-item.active {
   border-left: #fff 3px solid;
-}
+} */
 
 
 #home-heading {
   position: relative;
   min-height: 100vh;
-  background: url('../img/blue-03.jpg');
+  background: url('../img/bed.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   text-align: center;
-  color: #fff;
+  color: var(--accentblue);
 }
 
 #home-heading p {
@@ -39,31 +53,71 @@
   background: rgba(0, 0, 0, 0.7);
 }
 
-#video-play {
+
+/* タイムライン */
+.project-title h1 {
+  font-weight: 300;
+}
+
+.project-categ {
+  font-weight: lighter;
+}
+
+.cursor {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  background: url('../img/distance.jpg') no-repeat 50% 50%;
+  background-size: cover;
+  z-index: 1;
+  display: none;
+}
+
+.whole {
+  width: 80%;
+  margin: 180px auto;
+  height: 100%;
+}
+
+.project {
+  border-bottom: 1px solid rgba(85, 31, 31, 0.2);
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 1;
   position: relative;
-  min-height: 200px;
-  background: url('../img/media.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: 0 -300px;
-  text-align: center;
-  color: #fff;
+  z-index: 2;
+  color: var(--accentblue);
+  /* mix-blend-mode: difference; */
 }
 
 
-
-
-
-
-#faq .card-body,
-#faq .card-header {
-  background: #333;
+/* corona warning part */
+.corona-img {
+  /* width: 20vw;
+  height: 20vh;
+  max-width: 25%; */
+  width: 200px;
+  height: 200px;
 }
+
+
+.info-header {
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px #ddd solid; }
+
 
 #main-footer {
   background: #000;
   color: #fff;
 }
+
+
 
 
 
@@ -124,8 +178,8 @@
   z-index: 1;
   padding: 20px;
   transition: 0.3s;
-  background: #000;
-  color: #fff;
+  /* background: #000; */
+  color: var(--accentred);
 }
 
 
