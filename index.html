@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="jp">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keyword" content="演劇, イマーシブシアター, オンライン演劇, hotel she">
+  <meta name="description" content="Start Checking In: 2020.8.1(Sat) - 8.31(Mon) モーテル・アネモネに流れる奇妙な噂。複数の客室やフロアを彷徨い、そして遭遇する“なにか“の正体。">
+
   <script>
     (function(d) {
       var config = {
@@ -16,20 +19,20 @@
     })(document);
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"> -->
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
-  <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" /> -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css"> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <title>Strange Night</title>
 </head>
 
 <body>
-  <!-- <div class="cursor"></div> -->
 
-  <div class="wrapper">
+  <div class="wrapper-inside">
     <!-- タイトル&ヒーローパート -->
        <div class="slider">
           <div id="rgbKineticSlider" class="rgbKineticSlider"></div>
@@ -41,202 +44,351 @@
          </nav>
       </div>
 
+      
+        <div class="gradient0"></div>
+      
+
   <!-- STORY SECTION -->
   <section id="home-heading" class="p-5">
     <div class="dark-overlay">
       <div class="row">
         <div class="col">
           <div class="container pt-5">
-            <h1 class="pb-5">OPEN: 2020.8.1(Sat) - 8.31(Mon)</h1>
-            <p class="d-sm-block">
-              とある繁華街の外れにたたずむ１棟のモーテル。<br>真夜中になると、どこからともなく人が集まりだすその姿から“ミッドナイトモーテル“と呼ばれ親しまれてきた。<br>そんなモーテルへも少しずつ客足は遠のき、ついに閉館の夜を迎えることとなった。今晩は、最後の一夜を祝うクロージングパーティー。<br>常連客に加え、最後にモーテルを一目見ようと大勢の人が集まってきた。ラウンジには声高らかに歌う者、思い出話に花を咲かせる者、なにやら声を潜めて話をする者も…。みなが思い思いにパーティーを楽しみ、そろそろお開きになろうとしたその時。<br>一人の若い女が声をあげた。<br>『みなさん、このモーテルの例の噂を忘れてないですよね？』女の一声で、華やかな雰囲気は一転。モーテルに不穏な空気が漂い始めた。さっきまで楽しそうに話していたはずが急によそよそしくなる常連客。素性の知れない宿泊客と決して目を合わせようとしないコンシェルジュ。ほのかなネオンの下、あなたはモーテルの真実を目にする最後の宿泊者となるー。
-            </p>
+            <!-- <p class="neon-1 border-bottom">
+              MOTEL ANEMONE
+            </p> -->
+            <div class="row">
+              <div class="col-md-9 m-auto text-center py-3">
+                <div class="kanban"><b>O<span>PEN</span><br>202<span>0.8.1</span><span>(SAT)</span><br><span>~8.3</span>1<span>(MON)</span></b></div>
+              </div>
+            </div>
+             
+            <!-- <h2 class="py-5 border-bottom">OPEN: 2020.8.1(Sat)-8.31(Mon)</h1> -->
+            
           </div>
+          <p class="d-sm-block py-3">
+            モーテル・アネモネに流れる<br>奇妙な噂。<br>
+            複数の客室やフロアを彷徨い、<br>そして遭遇する<br>“なにか“の正体。
+          </p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- TICKET SECTION -->
-<section id="ticket" class="fontRed py-3">
+<section id="ticket" class="fontRed">
+  <div class="gradient180"></div>
   <header id="page-header">
     <div class="container">
       <div class="row">
         <div class="col-md-6 m-auto text-center py-3">
           <h2>TICKET</h3>
+          <h5 class="py-3">2020年7月11日（火）22:00より本サイトにて販売</h5>
         </div>
       </div>
     </div>
   </header>
-  <div class="container">
+  <div class="container my-3">
     <div class="row">
-      <div class="col-md-6">
-        <img src="img/logo.png" alt="" class="img-fluid d-none d-md-block">
-      </div>
-      <div class="col-md-6">
-        <h5 class="py-3">2020年7月4日（土）22:00より本サイトにて販売</h4>
-        <h5 class="py-3">ツイン / ダブルルーム</h4>
+      <div class="col-md-6 m-auto text-center py-3">
+        <h5 class="py-3">ツイン / ダブルルーム</h5>
         <p class="mt-2 pb-2">一部屋 25,000円〜（最大2名様まで宿泊可）</p>
-        <p>※ご宿泊日によって料金は変わります</p>
+        <!-- <img src="effect/logo.png" alt="" class="img-thumbnail"> -->
+         <div class="hover-img"></div>
+         <div class="hover-img-title"><h3>Twin/Double Room</h3></div>
+          <p>※ご宿泊日によって料金は変わります</p>
           <p>※公演期間中は一棟貸切のため、通常のホテル営業はおこないません。</p>
           <p>※上記料金は1名様で宿泊頂いた場合も同料金となります。</p>
-          <a href="#" class="btn btn-outline-danger btn-lg">COMING SOON</a>
+          <!-- <a href="#" class="btn btn-outline-danger btn-lg">COMING SOON</a> -->
+          <a href="" class="btn-3d paper paper-curl-right">BUY TICKET</a>
       </div>
     </div>
+  </div>
+  
+    
+  
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto text-center border mx-3 py-3">
+          <p class="py-4 text-justify">
+            泊まれる演劇 運営事務局では、 新型コロナウイルスの影響を踏まえ、イベントの開催有無を含め 8月の開催日までの週毎の社会情勢や経過をみながら政府及び自治体（京都府、京都市）における感染防止対策のもとに、適宜判断を行います。なお、新型コロナウイルス感染拡大状況によっては、都道府県別でのチケット販売 / 入場の制限をおこなう場合がございます。最新の情報は、こちらのWEBページ、また泊まれる演劇公式Twitter等でお知らせいたしますので、ご確認をお願いいたします。
+          </p>
+        </div>
+      </div>  
+    </div>
+
+</section>
+
+
+<!-- 参加の流れ -->
+<header id="page-header" class="fontRed py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 m-auto text-center py-3">
+        <h3>ご参加の流れ</h3>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+      <figure class="snip1482">
+        <figcaption>
+          <h3>STEP1</h3>
+          <p>本サイトより宿泊込みの公演チケットをご購入ください。</p>
+          <!-- <a href="#" class="btn btn-danger btn-block mt-2">BUY TICKET</a> -->
+        </figcaption>
+        <a href="#"></a><img src="strange_images/number-1-1.jpg" alt="sample45" />
+      </figure>
+    <figure class="snip1482 hover">
+      <figcaption>
+        <h3>STEP2</h3>
+        <p>チェックインをお済ませください。<br>
+          チェックイン後は客室でお過ごしください。<br>
+          <span class="point">19:30（19:15 L.O）まで</span>はバーラウンジのご利用も可能です。</p>
+      </figcaption>
+      <a href="#"></a><img src="strange_images/number-2.jpg" alt="sample59" />
+    </figure>
+    <figure class="snip1482">
+      <figcaption>
+        <h3>STEP3</h3>
+        <p>チケットに記載の公演時間に演目を体験頂けます。
+          なお、<span class="point">20時〜公演終了時間（深夜2時予定）は演目鑑賞を除いて
+            客室およびホテルから一切の外出はできません。</span></p>
+      </figcaption>
+      <a href="#"></a><img src="strange_images/number-3-1.jpg" alt="sample60" />
+    </figure>
+  </div>
+</div>
+
+  
+   <!-- TIMELINE -->
+<section id="info" class="m-7 py-5">
+  <div class="container">
+    <div class="row">
+    <div class="col-md-6 m-auto text-center">
+      <h3 class="py-3">公演のタイムライン</h3>
+      <p>泊まれる演劇『STRANGE NIGHT』では三密を回避するため、1日あたりの公演ステージを３回にわけ、1ステージで参加いただくお客さま人数を最大6組12名とした演目をおこないます。
+
+        ※チケット購入時に鑑賞時間をご指定いただけます。
+        ※参加頂けるステージはいずれか1ステージとなります。
+        ※いずれにステージも公演内容は同一となります。</p>
+    </div>
+    </div>
+        <table class="table text-center table-hover timeline">
+          <tbody>
+            <tr>
+              <th scope="row">第一部</th>
+              <td>20:00~22:00</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">第二部</th>
+              <td></td>
+              <td>22:00~24:00</td>
+              <td></td>
+            </tr>
+            <tr class="border-bottom">
+              <th scope="row">第三部</th>
+              <td></td>
+              <td></td>
+              <td>24:00~26:00</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    
+</section>
+
+</div>
+
+
+<div class="wrapper-out">
+  <div class="gradient0"></div>
+  <!-- INFORATION SECTION -->
+<section id="info" class="m-7 py-5">
+  <div class="container">
+    <div class="row">
+    <div class="col-md-6 m-auto text-center">
+      <h3 class="py-3">INFOMATION</h3>
+    </div>
+    </div>
+        <table class="table text-center">
+          <tbody>
+            <tr>
+              <th scope="row" class="modify-border">公演名</th>
+              <td class="modify-border">泊まれる演劇『STRANGE NIGHT』</td>
+            </tr>
+            <tr>
+              <th scope="row">会期</th>
+              <td>2020.8.1(土) - 8.31(月)</td>
+            </tr>
+            <tr>
+              <th scope="row">時間</th>
+              <td>チェックイン：15:00</td>
+              <!-- <td>開演</td>
+              <td>チェックアウト</td> -->
+            </tr>
+            <tr >
+              <th scope="row" class="modify-border"></th>
+              <td class="modify-border">開演</td>
+              <!-- <td>開演</td>
+              <td>チェックアウト</td> -->
+            </tr>
+            <tr>
+              <th scope="row" class="modify-border"></th>
+              <td class="modify-border">チェックアウト: 11:00</td>
+              <!-- <td>開演</td>
+              <td>チェックアウト</td> -->
+            </tr>
+            <tr>
+              <th scope="row">場所</th>
+              <td>HOTEL SHE, KYOTO
+                <br>601-8041 京都市南区東九条南烏丸町16
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">主宰・企画</th>
+              <td>HOTEL SHE, KYOTO</td>
+            </tr>
+            <tr class="border-bottom">
+              <th scope="row">お問い合わせ</th>
+              <td>tomareruengeki@gmail.com</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+</section>
+
+
+
+<!-- ACCESS -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 m-auto text-center">
+      <h3 class="py-3">ACCESS</h3>
+    </div>
+    </div>
+  <div class="row">
+    <div class="col-md-6">
+      <!-- <img src="strange_images/photo-2.jpg" alt="" class="img-thumbnail"> -->
+      <div class="hover-img-access"></div>
+    </div>
+    <div class="col-md-6 align-items-end">
+      <p>京都の中央を貫く烏丸通のロードサイドにひっそりと佇む、最果ての旅のオアシス“HOTEL SHE, KYOTO”。
+
+        ホテル空間はミッドセンチュリーアメリカの世界観で統一され、全客室にレコードプレーヤーを設置、ロビーラウンジにはアイスクリームパーラーを併設しています。
+      </p>
+      <!-- <a href="#" class="btn btn-outline-danger btn-lg">and more...</a> -->
+      <a href="https://www.hotelshekyoto.com/" class="btn-3d paper paper-curl-right">and more</a>
+    </div>
+  </div>
+  <div class="row my-4 justify-content-md-center">
+    <div class="col-md-4">
+      <p>京都駅から</p>
+      <p>京都駅八条口から烏丸通りを南へ徒歩で約10分</p>
+      <div class="w-100"></div>
+      <p>京都市営地下鉄 九条駅から</p>
+      <p>九条駅4番出口から烏丸通りを南へ徒歩で約2分</p>
+    </div>
+    <div class="col-md-3 text-right align-self-end">
+      <!-- <a href="#" class="btn btn-outline-danger btn-lg ">Google MAP</a> -->
+      <a href="https://goo.gl/maps/ZQiaZ1aZLZWV3ANc8" class="btn-3d paper paper-curl-right">Google Map</a>
+    </div>
+  </div>
+</div>
+<!-- DRINKS/GOODS section -->
+<section id="goods">
+  <div class="container">
+      <h3 class="text-center">DRINKS / GOODS</h3>
+      <p class="text-center">Coming soon</p>
+      <!-- <h3 class="pretext text-center">COOMING SOON</h3> -->
   </div>
 </section>
 
-  
+</div>
 
-  
-
-  <!-- 参加の流れ -->
-  <!-- PAGE HEADER -->
-  <header id="page-header" class="fontRed py-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 m-auto text-center py-3">
-          <h3>ご参加の流れ</h3>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- SERVICES SECTION -->
-  <section id="services" class="py-5">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-4">
-          <div class="card text-center">
-            <div class="card-header text-white">
-              <h3>STEP One</h3>
-            </div>
-            <div class="card-body">
-              <p class="card-text">本サイトより宿泊込みの公演チケットをご購入ください。</p>
-              <a href="#" class="btn btn-danger btn-block mt-2">BUY TICKET</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card text-center">
-            <div class="card-header bg-dark text-white">
-              <h3>STEP Two</h3>
-            </div>
-            <div class="card-body">
-              <p class="card-text">公演当日は19:30までにホテルフロントにて
-                チェックインをお済ませください。
-                チェックイン後は客室でお過ごしください。
-                19:30（19:15 L.O）まではバーラウンジのご利用も可能です。</p>
-          </div>
-        </div>
-      </div>
-        <div class="col-md-4">
-          <div class="card text-center">
-            <div class="card-header bg-dark text-white">
-              <h3>STEP Three</h3>
-            </div>
-            <div class="card-body">
-              <p class="card-text">チケットに記載の公演時間に演目を体験頂けます。
-                なお、20時〜公演終了時間（深夜2時予定）は演目鑑賞を除いて
-                客室およびホテルから一切の外出はできません。</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- タイムライン -->
-  <header id="page-header" class="py-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 m-auto text-center">
-          <h3 class="py-3">公演のタイムライン</h3>
-          <p>泊まれる演劇『STRANGE NIGHT』では三密を回避するため、1日あたりの公演ステージを３回にわけ、1ステージで参加いただくお客さま人数を最大6組12名とした演目をおこないます。
-
-            ※チケット購入時に鑑賞時間をご指定いただけます。
-            ※参加頂けるステージはいずれか1ステージとなります。
-            ※いずれにステージも公演内容は同一となります。</p>
-        </div>
-      </div>
-    </div>
-  </header>
-  <div class="whole">
-    <div class="project-list">
-        <div class="project project-1">
-            <div class="project-title"><h1>第一部</h1></div>
-            <div class="project-categ text-left">20:00~22:00</div>
-            <div class="project-overlay"></div>
-            
-        </div>
-        <div class="project project-2">
-            <div class="project-title"><h1>第二部</h1></div>
-            <div class="project-categ">22:00~24:00</div>
-            <div class="project-overlay"></div>
-           
-        </div>
-        <div class="project project-3">
-            <div class="project-title"><h1>第三部</h1></div>
-            <div class="project-categ">24:00~26:00</div>
-            <div class="project-overlay"></div>
-            
-        </div>
-    </div>
-  </div>
-
-
+<div class="gradient180"></div>
+<div class="wrapper-inside">
   <!-- NOTICE -->
   <section id="about" class="py-5 text-center">
     <div class="container">
       <div class="row">
         <div class="col">
           <div class="info-header mb-5">
-            <h1 class="text-primary pb-3">
+            <h3 class="pb-3">
               NOTICE
-            </h1>
+            </h3>
             <h3>新型コロナウイルス対策に関して</h3>
             <p>以下注意事項は感染リスクをゼロにするものではありません。感染リスクを最小限に抑えつつ、お越し頂くお客さまに、泊まれる演劇をお楽しみ頂くための対策指針となります。また新型コロナウイルス感染状況に応じて、公演の実施有無を含め、都度適切な判断をして参ります。</p>
           </div>
 
           <!--Notice: CORONA ICON SECTION  -->
+          <!-- <div class="img-container">
+            <article class="img">
+                <div class="img-wrapper">
+                    <div class="img-inner">
+                        <img class="img-holder" src="strange_images/corona-1.jpg" />
+                    </div>
+                </div>
+            </article>
+            <div class="hero-img-title">
+                <div class="img-title">
+                    <h1>MASK</h1>
+                </div>
+            </div>
+        </div> -->
 
-  <div class="card-group">
-    <div class="card">
-      <img class="card-img-top"　src="strange_images/corona-1.jpg" alt="">
-      <div class="card-body">
-        <p class="card-text">公演中は常時マスクの着用をお願いします。</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="strange_images/corona-2.jpg" alt="">
-      <div class="card-body">
-        <p class="card-text">ホテルチェックイン時に全てのお客さまに検温を実施いたします</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top"　src="strange_images/crona-3.jpg" alt="">
-      <div class="card-body">
-        <p class="card-text">ホテル内では頻繁にて指消毒をお願いします。</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top"　src="strange_images/corona-4.jpg" alt="">
-      <div class="card-body">
-        <p class="card-text">アクターや他の方との接触を避け、極力他の方との距離を確保してください。</p>
-      </div>
-    </div>
-  </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <!-- <img src="strange_images/corona-1.jpg" alt="..."class="img-thumbnail" id="corona-img"> -->
+                <div class="img-container">
+                  <article class="img">
+                      <div class="img-wrapper">
+                          <div class="img-inner">
+                              <img class="img-holder img-thumbnail" id="corona-img" src="strange_images/corona-1.jpg" />
+                          </div>
+                      </div>
+                  </article>
+                  <div class="hero-img-title">
+                      <div class="img-title">
+                          <h1>MASK</h1>
+                      </div>
+                  </div>
+              </div>
+      
+                <p class="py-3 text-center">公演中は常時マスクの着用をお願いします。</p>
+              </div>
+              <div class="col-md-3">
+                <img src="strange_images/corona-3.jpg" alt="..."class="img-thumbnail" id="corona-img">
+                <p class="py-3 text-center">ホテルチェックイン時に全てのお客さまに検温を実施いたします。</p>
+              </div>
+              
+              <div class="col-md-3">
+                <img src="strange_images/corona-4.jpg" alt="..."class="img-thumbnail" id="corona-img">
+                <p class="py-3 text-center">ホテル内では頻繁にて指消毒をお願いします。</p>
+              </div>
+              <div class="col-md-3">
+                <img src="strange_images/corona-2.jpg" alt="..."class="img-thumbnail" id="corona-img">
+                <p class="py-3 text-center">アクターや他の方との接触を避け、極力他の方との距離を確保してください。</p>
+              </div>
+            </div>
+          </div>
 
 
+          
           <!-- ACCORDION -->
-          <div id="accordion" class="py-5">
+          <div id="accordion" class="py-3">
             <div class="card">
               <div class="card-header">
                 <h5 class="mb-0">
                   <div href="#collapse1" data-toggle="collapse" data-parent="#accordion">
-                    <i class="fas fa-arrow-circle-down"></i> 入場制限に関して
+                    <!-- <i class="fas fa-arrow-circle-down"></i>  -->
+                    入場制限に関して
                   </div>
                 </h5>
               </div>
@@ -258,7 +410,8 @@
               <div class="card-header">
                 <h5 class="mb-0">
                   <div href="#collapse2" data-toggle="collapse" data-parent="#accordion">
-                    <i class="fas fa-arrow-circle-down"></i> 公演/接客に関して
+                    <!-- <i class="fas fa-arrow-circle-down"></i>  -->
+                    公演/接客に関して
                   </div>
                 </h5>
               </div>
@@ -276,7 +429,8 @@
               <div class="card-header">
                 <h5 class="mb-0">
                   <div href="#collapse3" data-toggle="collapse" data-parent="#accordion">
-                    <i class="fas fa-arrow-circle-down"></i> その他手洗い/消毒/換気に関して
+                    <!-- <i class="fas fa-arrow-circle-down"></i>  -->
+                    その他手洗い/消毒/換気に関して
                   </div>
                 </h5>
               </div>
@@ -294,13 +448,14 @@
             <div class="card">
               <div class="card-header">
                 <h5 class="mb-0">
-                  <div href="#collapse3" data-toggle="collapse" data-parent="#accordion">
-                    <i class="fas fa-arrow-circle-down"></i> ホテル施設内の飲食提供に関して
+                  <div href="#collapse4" data-toggle="collapse" data-parent="#accordion">
+                    <!-- <i class="fas fa-arrow-circle-down"></i>  -->
+                    ホテル施設内の飲食提供に関して
                   </div>
                 </h5>
               </div>
 
-              <div id="collapse3" class="collapse">
+              <div id="collapse4" class="collapse">
                 <div class="card-body">
                   ・公演チケット料金には朝食やドリンクの提供を含みません。
 ・従業員はマスク及び使い捨てビニール手袋を着用のもと接客、調理をおこないます。
@@ -316,13 +471,14 @@
             <div class="card">
               <div class="card-header">
                 <h5 class="mb-0">
-                  <div href="#collapse3" data-toggle="collapse" data-parent="#accordion">
-                    <i class="fas fa-arrow-circle-down"></i> アクターおよび従業員/スタッフの感染対策
+                  <div href="#collapse5" data-toggle="collapse" data-parent="#accordion">
+                    <!-- <i class="fas fa-arrow-circle-down"></i>  -->
+                    アクターおよび従業員/スタッフの感染対策
                   </div>
                 </h5>
               </div>
 
-              <div id="collapse3" class="collapse">
+              <div id="collapse5" class="collapse">
                 <div class="card-body">
                   ・アクターおよび従業員/スタッフも出勤前に検温を行い、37.5℃以上の発熱の場合は出勤を不可とします。なお、上記の理由で急遽公演を中止/中断とする場合がございます。
 ・ユニフォームは適宜洗濯し清潔かつ衛生的な状態を維持します。
@@ -335,7 +491,7 @@
           </div> 
           <!-- Acordionの締め-1 -->
 
-          <div class="info-header mb-5">
+          <div class="info-header my-3">
             <h3>チケットに関して</h3>
             <p>・本企画への参加には事前のご予約が必要です。
               ・作品の演出上、お一人様につき１公演までの参加となります。複数公演の参加はできませんのでご注意ください。
@@ -346,7 +502,7 @@
               </p>
           </div>
 
-          <div class="info-header mb-5">
+          <div class="info-header my-3">
             <h3>入場に関して</h3>
             <p>・チェックインは18:00より可能です。ホテルフロントにてご予約者様のお名前と予約確認メールをご提示ください。
               ・19:30までに必ずチェックインをお願いいたします。上記時間を過ぎたチェックインの場合、公演状況によっては入場をお待ち頂く可能性がございます。
@@ -357,7 +513,7 @@
             </p>
           </div>
 
-          <div class="info-header mb-5">
+          <div class="info-header my-3">
             <h3>公演に関して</h3>
             <p>・本演目は、ホテル一棟を舞台に繰り広げられる演劇をお客様ご自身の足で歩いてご鑑賞いただく、宿泊型イマーシブシアターです。突然の物音や照明の明滅など、一部で刺激的な演出を含みます。暗所や予測不能な出来事に対して極度に恐怖を感じる方はご鑑賞をお控えください。
               ・20時〜公演終了時間（深夜2時予定）は演目鑑賞を除いて客室およびホテルから一切の外出はできません。
@@ -388,7 +544,7 @@
             </p>
           </div>
 
-          <div class="info-header mb-5">
+          <div class="info-header my-3">
             <h3>ご宿泊に関して</h3>
             <p>・中学生以上の方のみご鑑賞・ご宿泊頂くことが可能です。また18歳未満のお客様のみでのグループ参加はお断りしております。必ず18歳以上の方同伴でご参加ください。
               ・公演期間は通常のホテル営業はおこなっておりません。通常のチェックイン/チェックアウト時間とは異なりますのでご注意ください。
@@ -409,7 +565,9 @@
     </div>
   </section>
 
-  
+</div>
+<div class="gradient0"></div>
+<div class="wrapper-out">
 <!-- ABOUT SECTION -->
 <section id="about" class="py-3">
   <header id="page-header">
@@ -424,7 +582,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <img src="img/logo.png" alt="" class="img-fluid d-none d-md-block">
+        <img src="effect/logo.png" alt="" class="img-fluid d-none d-md-block">
       </div>
       <div class="col-md-6">
         <p>泊まれる演劇。
@@ -448,7 +606,7 @@
           <i class="fab fa-twitter"><a href="#"></a></i>
         </div>
         <div class="col-md-4 text-center">
-          <i class="fab fa-instagram"><a href="#"></a></i>
+          <i class="fab fa-line"><a href="#"></a></i>
         </div>
       </div>
       <p class="text-center text-mute">当サイトで掲載されている写真は公演のイメージ写真です。実際の公演内容とは異なりますので予めご了承ください。</p>
@@ -462,12 +620,11 @@
 
 
   <!-- FOOTER -->
-  <footer id="main-footer" class="text-center p-4">
+  <footer id="main-footer" class="p-4">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 text-right">
-          <a href="#"><i class="fas fa-arrow-up"></i></a>
-          <p>ホームへ</p>
+        <div class="col text-right">
+          <a href="#"><i class="fas fa-arrow-up text-danger fa-6x"></i></a>
         </div>
       </div>
       <div class="row">
@@ -479,24 +636,24 @@
     </div>
   </footer>
 
-
+</div>
+<div class="gradient180"></div>
 
 
   
 
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+  
+ 
+  
 
   <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
 
   </script>
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
+  
    <!-- TweenMax -->
    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/TweenMax.min.js"></script>
    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/imagesLoaded.pkgd.min.js"></script>
@@ -509,52 +666,11 @@
    <script src = "https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/blotter.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/materials/rollingDistortMaterial.min.js"></script>
 
-  <!-- タイムライン -->
-   <!-- Poject-cursor-GSAP -->
-   <!-- <script>
-    var $cursor = $(".cursor"),
-    $overlay = $(".project-overlay");
-
-    function moveCircle(e) {
-        TweenLite.to($cursor, 0.5,{
-            css: {
-                left: e.pageX,
-                top: e.pageY
-            },
-                delay: 0.03
-        });
-        console(left);
-    }
-
-    $(".project-1").hover(function(){
-        $(".cursor").css({"background-image": "url(img/room.jpg)"});
-    });
-    $(".project-2").hover(function(){
-        $(".cursor").css({"background-image": "url(img/mask.jpg)"});
-    });
-    $(".project-3").hover(function(){
-        $(".cursor").css({"background-image": "url(img/bed.jpg)"});
-    });
-    $(".project-4").hover(function(){
-        $(".cursor").css({"background-image": "url(img/bed-2.jpg)"});
-    });
-
-    var flag = false;
-    $($overlay).mousemove(function(){
-        flag = true;
-        TweenLite.to($cursor, 0.6, {scale: 1, autoAlpha: 1});
-        $($overlay).on("mousemove", moveCircle);
-    });
-    $($overlay).mouseout(function(){
-        flag = false;
-        TweenLite.to($cursor, 0.3, {scale: 0.1, autoAlpha: 0});
-    }); 
-
-</script> -->
+  
 
    <!-- Slider plugin -->
    <script src="js/rgbKineticSlider.js"></script>
-   <script>
+   <script> 
    const images = ["strange_images/hero-1.jpg","strange_images/photo-3.jpg","strange_images/photo-7.jpg"];
    const texts = [["UNLOCKED"], ["OFFBEAT"]];
    
@@ -562,8 +678,8 @@
        slideImages: images, // array of images
        itemsTitle: texts, // array of titles / subtitles
 
-       backgroundDisplacementSprite: "img/map-9.jpg", // slide displacement image 
-       cursorDisplacementSprite: "img/displace-circle.png", // cursor displacement image
+       backgroundDisplacementSprite: "effect/map-9.jpg", // slide displacement image 
+       cursorDisplacementSprite: "effect/displace-circle.png", // cursor displacement image
 
        cursorScaleIntensity : 0.65, //cursor effect intensity
        cursorMomentum : 0.14, // lower is slower
@@ -627,10 +743,152 @@
        increaseSize();
    </script>
 
+<!-- 3D Mouse Hover Pallax -->
+<script>
+  animteHover();
+  function animteHover(){
+      var $img = $(".img");
+      $img.mousemove(function(e){
+          var xPos = $(this).data("xPos");
+          var yPos = $(this).data("yPos");
+          // pageX: マウスイベント発火時の水平位置のピクセル数値が格納
+          var mouseX = e.pageX;
+          var mouseY = e.pageY;
+          var left = mouseX - xPos;
+          var top = mouseY - yPos;
+          //transformOriginを3Dで指定している↓
+          // http://www.htmq.com/css3/transform-origin.shtml
+          var origin = "center center -300";
+          var xPerc =((left - $(this).data("itemWidth") / 2) / $(this).data("itemWidth"))*200;
+          var yPerc =((top - $(this).data("itemHeight") / 2) / $(this).data("itemHeight"))*200;
+
+          // to: オブジェクトの操作方法メソッド
+          //$(this).data("imgOuter"): target=アニメーションさせるオブジェクト
+          // 3:　duration=アニメーションの継続時間（秒）
+          // {}: CSS Propaties=アニメーションさせたいCSSプロパティ
+          // http://un-tech.jp/tweenmax-started/
+          TweenMax.to($(this).data("imgOuter"), 3, {
+              // rotation：変形（回転）
+              rotationX: 0.1*yPerc,
+              rotationY: -0.1*xPerc,
+              //transformOrigin：変形の起点
+              transformOrigin: origin,
+              ease: Expo.easeOut,
+          });
+      });
+
+      //data属性の設定 【 対象要素.data( 属性名, 値 ) 】
+      // https://www.sejuku.net/blog/38263
+      $img.each(function(){
+          // 「offset()」では、対象となるHTML要素の左上を原点としたX・Y座標を取得することができます
+          // 「top（Y座標）」「left（X座標）」
+          $(this).data("xPos", $(this).offset().left);
+          $(this).data("yPos", $(this).offset().top);
+          $(this).data("itemWidth", $(this).width());
+          $(this).data("itemHeight", $(this).height());
+          // あるタグ内の子孫要素を選択するためのメソッド
+          $(this).data("imgOuter", $(this).find(".img-inner"));
+      });
+
+      $img.on("mouseleave", function(){
+          TweenMax.to($(this).data("imgOuter"), 3, {
+              rotationX: 0,
+              rotationY: 0,
+              transformOrigin: origin,
+              ease: Expo.easeOut,
+          });
+      });
+
+  }
+
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script src="js/hover-effect.umd.js"></script>
+   <!-- Hover Effect Image -->
+   <script>
+
+    var hoverDistort = new hoverEffect({
+          parent: document.querySelector('.hover-img'),
+          // intensity: 0.5,
+          intensity1: 1,
+          intensity2: 1,
+          speedIn: 1,
+          speedOut: 1,
+          angle1: "20deg",
+          angle2: "20deg",
+          image1: "effect/logo.jpg",
+          image2: "strange_images/photo-1.jpg",
+          displacementImage: "effect/4.png"
+    });
+    var hoverDistort = new hoverEffect({
+          parent: document.querySelector('.hover-img-access'),
+          // intensity: 0.5,
+          intensity1: 1,
+          intensity2: 1,
+          speedIn: 1,
+          speedOut: 1,
+          angle1: "20deg",
+          angle2: "20deg",
+          image1: "strange_images/photo-2.jpg",
+          image2: "strange_images/photo-1.jpg",
+          displacementImage: "effect/4.png"
+    });
+
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.hover-img-title');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+$(document).ready(function() {
+
+$('.hover-img').hover(         
+    function () {
+    anime.timeline({loop: false})
+    .add({
+    targets: '.hover-img-title .letter',
+    translateX: [80,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 600,
+    delay: (el, i) => 100 + 40 * i
+    })
+    },
+
+    function () {
+    anime.timeline({loop: false})
+    .add({
+    targets: '.hover-img-title .letter',
+    translateX: [0,-80],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 800,
+    delay: (el, i) => 40 * i
+    });         
+    }
+);
+          
+});
+
+</script>
+
+<script>
+  $(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
+</script>
+
+
 <!-- <script src="https://unpkg.com/kursor"></script>
 <script>
     new kursor({
+        el: '#main-footer',
         type: 4,
+        color: '#3b848c',
         removeDefaultCursor: true
     })
 </script> -->
