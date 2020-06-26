@@ -5,6 +5,7 @@
   --subcolor: #d9cdbf;
   --darkcolor: #260202;
   --mainfont: ta-kotodama-r, sans-serif;
+  --subfont: ta-kai-regular, sans-serif;
 
   --shadow-color: #FF9E9E;
   --shadow-color-light: white;
@@ -20,7 +21,8 @@ body {
   background-color: var(--basecolor);
 }
 
-.wrapper-inside {
+/* TOPとストーリー */
+.wrapper-1 {
   position: relative;
   overflow-x: hidden;
   /* background-color:#0A0B0B; */
@@ -28,35 +30,187 @@ body {
   font-family: var(--mainfont);
   color: var(--darkcolor);
 }
-.wrapper-out {
+.gradient1-2 {
+  position: relative;
+  min-height: 15vh;
+  width: 100%;
+  background: rgb(242,236,216);
+background: linear-gradient(180deg, rgba(242,236,216,0.7049194677871149) 0%, rgba(38,2,2,1) 100%);
+}
+/* TICKET */
+.wrapper-2 {
   position: relative;
   overflow-x: hidden;
-  background-color:#0A0B0B;
+  background-color: var(--darkcolor);
+  font-family: var(--subfont);
+  color: var(--basecolor);
+}
+
+.gradient2-3 {
+  position: relative;
+  min-height: 10vh;
+  width: 100%;
+  background: rgb(38,2,2);
+  background: linear-gradient(180deg, rgba(38,2,2,1) 0%, rgba(59,132,140,1) 100%);  
+}
+
+/* 参加の流れ */
+.wrapper-3 {
+  position: relative;
+  overflow-x: hidden;
+  background-color:var(--accentblue);
+  font-family: var(--subfont);
+  color: var(--basecolor);
+}
+
+.gradient3-4 {
+  position: relative;
+  min-height: 10vh;
+  width: 100%;
+  background: rgb(59,132,140);
+background: linear-gradient(180deg, rgba(59,132,140,1) 0%, rgba(217,205,191,1) 100%);
+}
+
+/* タイムライン */
+.wrapper-4 {
+  position: relative;
+  overflow-x: hidden;
+  background-color:var(--subcolor);
+  font-family: var(--mainfont);
+  color: var(--darkcolor);
+}
+.gradient4-5 {
+  position: relative;
+  min-height: 10vh;
+  width: 100%;
+  background: rgb(217,205,191);
+background: linear-gradient(180deg, rgba(217,205,191,1) 0%, rgba(242,236,216,1) 100%);
+}
+/* Info */
+.wrapper-5 {
+  position: relative;
+  overflow-x: hidden;
+  background-color:var(--basecolor);
+  font-family: var(--mainfont);
+  color: var(--accentblue);
+}
+
+.gradient5-6 {
+  position: relative;
+  min-height: 10vh;
+  width: 100%;
+  background: rgb(242,236,216);
+background: linear-gradient(180deg, rgba(242,236,216,1) 0%, rgba(59,132,140,1) 100%);
+}
+
+/* Aeccess */
+.wrapper-6 {
+  position: relative;
+  overflow-x: hidden;
+  background-color:var(--accentblue);
   font-family: var(--mainfont);
   color: var(--basecolor);
 }
-.gradient0 {
+
+.gradient6-7 {
   position: relative;
   min-height: 10vh;
   width: 100%;
-  background: rgb(10,11,11);
-  background: linear-gradient(0deg, rgba(10,11,11,0.9654236694677871) 0%, rgba(0,0,0,0.8869922969187675) 35%, rgba(242,236,216,1) 100%);
+  background: rgb(59,132,140);
+background: linear-gradient(180deg, rgba(59,132,140,1) 0%, rgba(38,2,2,1) 100%);
+  
 }
-.gradient180 {
+
+/* DRINK/GOODS */
+.wrapper-7 {
+  position: relative;
+  overflow-x: hidden;
+  background-color:var(--darkcolor);
+  font-family: var(--mainfont);
+  color: var(--basecolor);
+}
+
+.gradient7-8 {
   position: relative;
   min-height: 10vh;
   width: 100%;
-  background: rgb(10,11,11);
-  background: linear-gradient(180deg, rgba(10,11,11,0.9654236694677871) 0%, rgba(0,0,0,0.8869922969187675) 35%, rgba(242,236,216,1) 100%);
+  background: rgb(38,2,2);
+background: linear-gradient(180deg, rgba(38,2,2,1) 0%, rgba(227,47,56,1) 100%);
 }
+
+/* NOTICE */
+.wrapper-8 {
+  position: relative;
+  overflow-x: hidden;
+  background-color:var(--accentred);
+  font-family: var(--mainfont);
+  color: var(--basecolor);
+}
+
+.gradient8-9 {
+  position: relative;
+  min-height: 10vh;
+  width: 100%;
+  background: rgb(227,47,56);
+background: linear-gradient(180deg, rgba(227,47,56,1) 0%, rgba(59,132,140,1) 100%);
+}
+
+/* 注意事項: チケットに関してから */
+.wrapper-9 {
+  position: relative;
+  overflow-x: hidden;
+  background-color:var(--accentblue);
+  font-family: var(--mainfont);
+  color: var(--basecolor);
+}
+.gradient9-10 {
+  position: relative;
+  min-height: 10vh;
+  width: 100%;
+  background: rgb(59,132,140);
+background: linear-gradient(180deg, rgba(59,132,140,1) 0%, rgba(242,236,216,1) 100%);
+}
+/* ABOUT & SHARE*/
+.wrapper-10 {
+  position: relative;
+  overflow-x: hidden;
+  background-color:var(--basecolor);
+  font-family: var(--mainfont);
+  color: var(--accentred);
+}
+
+.gradient10-11 {
+  position: relative;
+  min-height: 10vh;
+  width: 100%;
+  background: rgb(242,236,216);
+background: linear-gradient(180deg, rgba(242,236,216,1) 0%, rgba(227,47,56,1) 100%);
+}
+
+/* FOOTER */
+.wrapper-11 {
+  position: relative;
+  overflow-x: hidden;
+  background-color:var(--accentred);
+  font-family: var(--mainfont);
+  color: var(--basecolor);
+}
+.gradient11-12 {
+  position: relative;
+  min-height: 10vh;
+  width: 100%;
+  background: rgb(227,47,56);
+background: linear-gradient(180deg, rgba(227,47,56,1) 0%, rgba(38,2,2,1) 100%);
+}
+
 
 #home-heading {
   position: relative;
   min-height: 100vh;
   /* height: 100%; */
-  background: url('../effect/hero-background.jpg');
+  /* background: url('../effect/hero-background.jpg');
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   text-align: center;
   color: var(--accentblue);
 }
@@ -83,7 +237,7 @@ body {
   /* user-select: none; */
 }
 
-.kanban b{
+/* .kanban b{
   font-size: 2.5rem;
 
   color: #fee;
@@ -127,7 +281,7 @@ body {
     color: inherit;
     text-shadow: inherit;
   }
-}
+} */
 
 
 /* #neon p {
@@ -184,6 +338,9 @@ body {
 .timeline {
   font-size: 2rem;
 }
+table td {
+  border-top: var(--darkcolor);
+}
 th.modify-border{
   border-top: 0px none;
 }
@@ -195,7 +352,7 @@ td.modify-border{
 
 
 /* corona warning part */
-.img-container {
+/* .img-container {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -231,8 +388,6 @@ td.modify-border{
   transform: scale(1.4);
   width: 100%;
   height: 100%;
-  /* object-fit: cover; */
-  /* コンテナのサイズにトリミングできる */
 }
 
 .hero-img-title {
@@ -241,20 +396,16 @@ td.modify-border{
   left: 50%;
   transform: translate(-50%, -50%);
   mix-blend-mode: exclusion;
-  /* 背景色と要素のブレンド方法を指定：ブレンドモードの選択 */
-  /* https://ics.media/entry/7258/ */
-  
 
 }
 
 .img-title h1 {
-  /* font-family: "Monument Extended"; */
   color: transparent;
   letter-spacing: 12px;
   font-size: 36px;
   -webkit-text-stroke: 2px white;
   text-transform: uppercase;
-}
+} */
 
 /* 
 .info-header {
@@ -285,17 +436,19 @@ td.modify-border{
   }
 
   
+.accordion {
+  cursor: pointer;
+}
 
 
-
-#main-footer {
-  background: #000;
-  color: #fff;
+#main-footer a{
+  color: var(--subcolor);
 }
 
 /* 強調箇所 */
 span.point {
-  background: linear-gradient(transparent 50%, yellow 50%);
+  /* background: linear-gradient(transparent 70%, yellow 50%); */
+  color: var(--accentred);
 }
 
 /* hover-effect-img */
@@ -375,7 +528,7 @@ span.point {
   font-family: "Monument Extended";
   font-weight: 100;
   font-size: 3rem;
-  color: red;
+  color:var(--accentred);
   
 }
 
@@ -389,7 +542,7 @@ span.point {
   padding-right: 3px;
   padding-left: 3px;
   transition: 0.3s;
-  background: #000;
+  background: var(--darkcolor);
   color: var(--basecolor);
 }
 .slider nav a i {
