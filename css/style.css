@@ -4,9 +4,11 @@
   --accentred: #e32f38;
   --subcolor: #d9cdbf;
   --darkcolor: #260202;
-  --mainfont: ta-kotodama-r, sans-serif;
-  --subfont: ta-kai-regular, sans-serif;
 
+  --mainfont: ta-kotodama-r, sans-serif;
+  --accentfont: ta-kai-regular, sans-serif;
+  --enfont: garamond-premier-pro, serif;
+  --pointfont: fot-klee-pro, sans-serif;
   --shadow-color: #FF9E9E;
   --shadow-color-light: white;
 }
@@ -24,7 +26,7 @@ a {
 }
 a:hover {
   font-weight: bold;
-  color: var(--accentred);
+  color: var(--accentblue);
 }
 
 .img-thumbnail {
@@ -231,17 +233,19 @@ background: linear-gradient(180deg, rgba(227,47,56,1) 0%, rgba(38,2,2,1) 100%);
 #home-heading {
   position: relative;
   min-height: 100vh;
+  
   /* height: 100%; */
   /* background: url('../effect/hero-background.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat; */
   /* text-align: center; */
-  color: var(--accentblue);
+  /* color: var(--accentblue); */
 }
 
 
 #home-heading p {
   font-size: 1rem;
+  font-family: var(--accentfont);
   color: var(--accentred);
   line-height: 280%;
 }
@@ -557,7 +561,7 @@ span.point {
   display: none;
 }
 #outstanding-text-mobile h1{
-  font-family: "Monument Extended";
+  font-family: var(--enfont);
   font-weight: 100;
   font-size: 3rem;
   color:var(--accentred);
