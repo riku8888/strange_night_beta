@@ -598,7 +598,8 @@ span.point {
   
   .slider {
     width: 100%;
-    height: 100%;
+    height: 80vh;
+    margin-bottom: 20vh;
     text-transform: uppercase;
     position: relative;
   }
@@ -624,7 +625,19 @@ span.point {
   #outstanding-text-mobile {
     display: inline-block;
   }
+
+  .timeline {
+    font-size: 1rem;
+  }
+  .gone-td {
+    display: none;
+  }
+
+  .small-text {
+    font-size: 0.7rem;
+  }
 } 
+
 
 
 /* 3D-paper-btn */
