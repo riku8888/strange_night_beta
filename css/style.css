@@ -18,7 +18,15 @@
 i {
   font-size: 2rem;
 }
-
+.border-frame {
+  border: 1px solid #3b848c;
+}
+.border-top-frame{
+  border-top: 1px solid #3b848c;
+}
+.border-bottom-frame {
+  border-bottom: 1px solid #3b848c;
+}
 a {
   text-decoration: none;
   color: var(--darkcolor);
@@ -364,7 +372,7 @@ background: linear-gradient(180deg, rgba(227,47,56,1) 0%, rgba(38,2,2,1) 100%);
 
 /* タイムライン */
 .timeline {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 table td {
   border-top: var(--darkcolor);
@@ -631,14 +639,14 @@ span.point {
   }
 
   .timeline {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .gone-td {
     display: none;
   }
 
   .small-text {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 } 
 
