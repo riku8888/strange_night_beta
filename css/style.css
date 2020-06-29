@@ -61,6 +61,7 @@ body {
   color: var(--darkcolor);
 }
 
+/* reference: https://codepen.io/yamaki0405/pen/omyVgB */
 .box {
   width: 300px;
   height: 300px;
@@ -85,7 +86,7 @@ body {
 }
 
 .arrowInner p {
-  font-size: 12px;
+  font-size: 0.8rem;
   text-align: end;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -444,6 +445,10 @@ background: linear-gradient(180deg, rgba(227,47,56,1) 0%, rgba(38,2,2,1) 100%);
 /* タイムライン */
 .timeline {
   font-size: 1.7rem;
+  font-weight: lighter;
+}
+.timeline th.border-top-frame {
+  font-weight: lighter;
 }
 table td {
   border-top: var(--darkcolor);
@@ -679,6 +684,10 @@ span.point {
   display: none;
 }
 
+.border-swipe {
+  border-bottom: 1px solid #000;
+}
+
 
 @media screen and (max-width:52em) {
 
@@ -686,11 +695,17 @@ span.point {
     top:12rem;
     right: 0;
     /* color: white; */
+    
+  }
+
+  .arrowInner p {
+    font-size: 0.6rem;
   }
 
   .box .arrow {
     background: none;
   }
+
   
   .slider {
     width: 100%;
@@ -713,6 +728,7 @@ span.point {
       /* top:auto; */
       /* bottom: 3rem; */
       top: 50vh;
+      font-size: 0.6rem;
   }
 
   .slider nav a:hover {

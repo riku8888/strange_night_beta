@@ -33,6 +33,9 @@
       h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
     })(document);
   </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
@@ -50,9 +53,9 @@
        <div class="slider">
           <div id="rgbKineticSlider" class="rgbKineticSlider"></div>
           <nav>
-             <a href="#" class="main-nav prev border-bottom border-dark" data="previous">SWIPE or Crick</a>
+             <a href="#" class="main-nav prev border-swipe" data="previous">SWIPE / CLICK</a>
              <!-- <i class="fas fa-chevron-left"></i> -->
-             <a href="#" class="main-nav next border-bottom border-dark" data="next">SWIPE or Crick</a>
+             <a href="#" class="main-nav next border-swipe px-4" data="next">SWIPE / CLICK</a>
              <!-- <i class="fas fa-chevron-right"></i> -->
            <div id="outstanding-text"></div>
            <div id="outstanding-text-mobile"><h1>STRANGE NIGHT</h1></div>
@@ -443,7 +446,7 @@
                 </h5>
               </div>
 
-              <div id="collapse1" class="collapse show">
+              <div id="collapse1" class="navbar-collapse show">
                 <div class="card-body">
                   ・三密を回避するため、1日あたりの公演ステージを３回にわけ、1ステージで参加いただくお客さま人数を最大6組12名とした演目をおこないます。
                   <br>・客室受け入れ数もホテル通常営業時の半分程度とします。
@@ -484,13 +487,11 @@
                   </div>
                 </h5>
               </div>
-
               <div id="collapse3" class="collapse">
                 <div class="card-body">
                   ・お客さま及びスタッフ・アクターともに、まめな手洗い（３０秒程度かけて水と石けんで丁寧に洗う）または手指消毒（手指消毒液使用）をおこなえるように、エントランスおよび各フロアには手指消毒液を設置いたします。
                   <br>・アクターとお客さま間の身体的接触の不可、美術備品への接触不可など、他者との高頻度接触をできる限り減らした演出をおこないます。
                   <br>・公演導線上のドアの開け放ち、屋内エリアは施設の状況に応じて、極力窓・扉の開放、空調機器を活用し換気に努めます。
-
                 </div>
               </div>
             </div>
@@ -504,7 +505,6 @@
                   </div>
                 </h5>
               </div>
-
               <div id="collapse4" class="collapse">
                 <div class="card-body">
                   ・公演チケット料金には朝食やドリンクの提供を含みません。
@@ -512,8 +512,6 @@
                   <br>・調理前には必ず手洗い消毒をおこないます。
                   <br>・食器類は、食べ残しや水等の飛沫がなるべく飛び跳ねないように、注意して回収します。
                   <br>・真正面の配置を避け、席をずらすことや横並びに座ることを促すことなど工夫をおこないます。
-
-
                 </div>
               </div>
             </div>
