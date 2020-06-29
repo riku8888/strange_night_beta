@@ -5,6 +5,7 @@
   --subcolor: #d9cdbf;
   --darkcolor: #260202;
 
+  --nomalfont: Helvetia, sans-serif;
   --mainfont: ta-kotodama-r, sans-serif;
   --accentfont: ta-kai-regular, sans-serif;
   --enfont: garamond-premier-pro, serif;
@@ -16,21 +17,23 @@
 @import 'https://fonts.googleapis.com/css?family=Dosis';
 
 .sub-title{
-  font-family: var(--pointfont);
+  font-family: var(--mainfont);
   color: var(--accentblue);
 }
 i {
   font-size: 2rem;
 }
 .border-frame {
-  border: 1px solid #3b848c;
+  border: 1px solid #260202;
 }
-.border-top-frame{
-  border-top: 1px solid #3b848c;
+td.border-top-frame, th.border-top-frame{
+  border-top: 1px solid #260202;
 }
 .border-bottom-frame {
-  border-bottom: 1px solid #3b848c;
+  border-bottom: 1px solid #260202;
 }
+
+
 a {
   text-decoration: none;
   color: var(--darkcolor);
@@ -54,8 +57,78 @@ body {
   overflow-x: hidden;
   /* background-color:#0A0B0B; */
   background-color: var(--basecolor);
-  font-family: var(--mainfont);
+  font-family: var(--normalfont);
   color: var(--darkcolor);
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  top: 18rem;
+  right: 5rem;
+  margin: calc(50vh - 150px) auto;
+  border-radius: 5px;
+  /* box-shadow: 0 2px 30px #999; */
+  /* background: #fff; */
+  background: none;
+  /* position: relative; */
+  position: absolute;
+  overflow: hidden;
+}
+
+/* アニメーション設定 */
+.arrowWrap {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 200px
+}
+
+.arrowInner p {
+  font-size: 12px;
+  text-align: end;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.arrow {
+  width: 1px;
+  height: 100px;
+  margin: 50px auto 0;
+  background-color: #eee;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.arrow::before {
+  content: '';
+  width: 1px;
+  height: 100px;
+  margin: 50px auto 0;
+  background-color: #000;
+  position: absolute;
+  top: -150px;
+  left: 0;
+  -webkit-animation: arrow 2.5s ease 0s infinite normal;
+  animation: arrow 2.5s ease 0s infinite normal;
+}
+
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+
+  60% {
+    -webkit-transform: translate3d(-50%, 100px, 0);
+    transform: translate3d(-50%, 100px, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-50%, 100px, 0);
+    transform: translate3d(-50%, 100px, 0);
+  }
 }
 
 /* TOPとストーリー */
@@ -240,6 +313,9 @@ background: linear-gradient(180deg, rgba(242,236,216,1) 0%, rgba(227,47,56,1) 10
 background: linear-gradient(180deg, rgba(227,47,56,1) 0%, rgba(38,2,2,1) 100%);
 }
 
+#home-heading h2, #home-heading h3{
+  font-family: var(--mainfont);
+}
 .mark {
   background-color: var(--darkcolor);
   color: var(--basecolor);
@@ -465,6 +541,7 @@ td.modify-border{
   #corona-img {
     padding: 0;
     border: 0;
+    width: 250px;
   }
 
   
@@ -569,7 +646,6 @@ span.point {
   font-weight: 100;
   font-size: 3rem;
   color:var(--accentred);
-  
 }
 
 .slider nav a {
@@ -577,16 +653,17 @@ span.point {
   position: absolute;
   top: 40vh;
   z-index: 1;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-right: 3px;
   padding-left: 3px;
   transition: 0.3s;
-  background: var(--darkcolor);
-  color: var(--basecolor);
+  background: none;
+  color: #000;
+  font-size: 0.8rem;
 }
 .slider nav a i {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 
@@ -599,10 +676,21 @@ span.point {
 .slider nav a.prev {
   left: 0vw;
   text-decoration: none;
+  display: none;
 }
 
 
 @media screen and (max-width:52em) {
+
+  .box {
+    top:12rem;
+    right: 0;
+    /* color: white; */
+  }
+
+  .box .arrow {
+    background: none;
+  }
   
   .slider {
     width: 100%;
@@ -624,7 +712,12 @@ span.point {
   .slider nav a{
       /* top:auto; */
       /* bottom: 3rem; */
-      top: 30vh;
+      top: 50vh;
+  }
+
+  .slider nav a:hover {
+    font-weight: normal;
+    /* color: var(--accentblue); */
   }
 
   #outstanding-text {
