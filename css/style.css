@@ -15,6 +15,10 @@
 
 @import 'https://fonts.googleapis.com/css?family=Dosis';
 
+.sub-title{
+  font-family: var(--pointfont);
+  color: var(--accentblue);
+}
 i {
   font-size: 2rem;
 }
@@ -236,27 +240,18 @@ background: linear-gradient(180deg, rgba(242,236,216,1) 0%, rgba(227,47,56,1) 10
 background: linear-gradient(180deg, rgba(227,47,56,1) 0%, rgba(38,2,2,1) 100%);
 }
 
-
-
-#home-heading {
-  position: relative;
-  min-height: 100vh;
-  
-  /* height: 100%; */
-  /* background: url('../effect/hero-background.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat; */
-  /* text-align: center; */
-  /* color: var(--accentblue); */
+.mark {
+  background-color: var(--darkcolor);
+  color: var(--basecolor);
 }
 
-
-#home-heading p {
-  font-size: 1rem;
-  font-family: var(--accentfont);
-  color: var(--accentred);
+.story {
   line-height: 280%;
 }
+
+
+
+
 
 /* 看板 ANEMONE SIGN */
 /* https://codepen.io/pen/ */
@@ -387,6 +382,7 @@ td.modify-border{
 
 
 
+
 /* corona warning part */
 /* .img-container {
   height: 100vh;
@@ -443,8 +439,8 @@ td.modify-border{
   text-transform: uppercase;
 } */
 
-/* 
-.info-header {
+
+/* .info-header {
   width: 50%;
   margin: auto;
   border-bottom: 1px #ddd solid; } */
@@ -550,8 +546,8 @@ span.point {
   position: relative;
  
   display: flex;
-  /* top: 50vh; */
-  /* left: 50vw; */
+  top: 50vh;
+  left: 50vw;
 }
 
 #outstanding-text {
@@ -611,7 +607,7 @@ span.point {
   .slider {
     width: 100%;
     height: 80vh;
-    margin-bottom: 20vh;
+    /* margin-bottom: 20vh; */
     text-transform: uppercase;
     position: relative;
   }
@@ -638,6 +634,10 @@ span.point {
     display: inline-block;
   }
 
+  #home-heading h2 {
+    font-size: 1.3rem;
+  }
+
   .timeline {
     font-size: 1.2rem;
   }
@@ -645,8 +645,16 @@ span.point {
     display: none;
   }
 
+  #info th {
+    width: 100px;
+  }
+
   .small-text {
     font-size: 0.8rem;
+  }
+
+  .accordion-title {
+    font-size: 1rem;
   }
 } 
 
