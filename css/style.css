@@ -453,6 +453,10 @@ td.modify-border{
   font-family: var(--barprice);
 }
 
+.bar-price{
+  font-size: 1.2rem;
+}
+
 .bar-and-bf .jp-font {
   font-family: var(--jpfont);
 }
@@ -873,4 +877,9 @@ a.btn-3d:hover {
   [data-scroll="out"] {
     opacity: 0;
     transform: translateX(-200px);
+  }
+
+  /* only bar menu page */
+  .ajust-space-p {
+    margin-bottom: 0;
   }
