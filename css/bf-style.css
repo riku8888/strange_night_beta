@@ -1,7 +1,6 @@
 
 
 body, html {
-    background-color: #E7E7E9;
 }
 
 .menu-border {
@@ -49,7 +48,7 @@ h3.drink-text {
     right: 0;
     text-align: center;
     top: 3rem;
-    background-color: #E7E7E9;
+    background-color: #f2ecd8;
     z-index: 1;
 }
 
