@@ -244,16 +244,86 @@ body {
   right:0;
 }
 
-#concierge-bg {
+#bar-drink-bg{
   position: absolute;;
-  width: 30rem;
+  width: 40rem;
   height: 40rem;
-  left:0;
+  left:-10rem;
+}
+
+#blue-cir-bg {
+  position: absolute;;
+  width: 20rem;
+  height: 20rem;
+  left: 10rem;
+}
+
+#red-cir-bg{
+  position: absolute;;
+  width: 20rem;
+  height: 20rem;
+  right:20rem;
+}
+
+#red-rec-bg{
+  position: absolute;;
+  width: 20rem;
+  height: 20rem;
+  right:0;
+}
+
+#red-flower-bg{
+  position: absolute;;
+  width: 60rem;
+  height: 33.8rem;
+  left:-20rem;
+}
+
+#palm-bg {
+  position: absolute;
+  width: 60rem;
+  height: 45rem;
+  right: -35rem;
+}
+
+#leaf-bg{
+  position: absolute;
+  width: 40rem;
+  height: 22.5rem;
+  left: -5rem;
+}
+
+#A-bg {
+  position: absolute;
+  width: 60rem;
+  height: 60rem;
+  right: -10rem;
+}
+#palm-red-bg {
+  position: absolute;
+  width: 60rem;
+  height: 45rem;
+  left: -15rem;
+}
+
+#logo-bg {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  left: 0;
+  z-index: 1;
+}
+
+#cart-bg {
+  position: absolute;
+  width: 60rem;
+  height: 60rem;
+  left: -5rem;
 }
 
 
 #timeline-bg {
-  position: absolute;;
+  position: absolute;
   width: 50rem;
   height: 50rem;
   right:0;
@@ -261,24 +331,11 @@ body {
 
 #corona-bg {
   position: absolute;;
-  margin: 0;
+  /* margin: 0; */
   width: 30rem;
   height: 30rem;
   left:0;
-}
-#logo-bar-bg{
-  position: absolute;;
-  right: 0;
-  width: 40rem;
-  height: 40rem;
-  
-}
-#cart-bg {
-  position: absolute;;
-  /* right: 0; */
-  width: 40rem;
-  height: 40rem;
-  left:0;
+  top: 550rem;
 }
 
 #map-kyoto-bg {
@@ -738,6 +795,42 @@ span.point {
   #ticket-bg {
     width: 50rem;
     height:50rem;
+  }
+  #red-cir-bg{
+    width: 10rem;
+    height: 10rem;
+    right:10rem;
+  }
+
+  #palm-red-bg {
+    left: -23rem;
+  }
+  #logo-bg {
+    width: 10rem;
+    height: 10rem;
+    left: 15rem;
+    z-index: 1;
+  }
+
+  #red-flower-bg{
+    left:-30rem;
+    top: 220rem;
+  }
+
+  #red-rec-bg{
+    right: -10rem;
+  }
+  #bar-drink-bg {
+    width: 40rem;
+    height: 40rem;
+    left: -20rem;
+  }
+
+  #leaf-bg {
+    width: 40rem;
+    height: 22.5rem;
+    left: -18rem;
+    top: 433rem;
   }
 } 
 
