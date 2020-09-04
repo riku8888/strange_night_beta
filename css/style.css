@@ -230,6 +230,10 @@ body {
   color: var(--basecolor);
 }
 
+.mark p {
+  font-size: 1.3rem;
+}
+
 .story {
   line-height: 280%;
 }
@@ -249,9 +253,18 @@ body {
   width: 40rem;
   height: 40rem;
   left:-10rem;
+  display: none;
 }
 
 #blue-cir-bg {
+  position: absolute;;
+  width: 20rem;
+  height: 20rem;
+  top: 170rem;
+  left: 10rem;
+}
+
+#blue-cir-2-bg {
   position: absolute;;
   width: 20rem;
   height: 20rem;
@@ -335,7 +348,7 @@ body {
   width: 30rem;
   height: 30rem;
   left:0;
-  top: 550rem;
+  top: 570rem;
 }
 
 #map-kyoto-bg {
@@ -717,13 +730,16 @@ span.point {
     color: var(--accentblue);
   }
 
+  .mark p {
+    font-size: 1rem;
+  }
+
   .box {
     top: 8rem;
     right: 0;
     /* color: white; */
     width: 94px;
     height: 430px;
-    
   }
 
 
@@ -731,7 +747,6 @@ span.point {
     background: none;
   }
 
-  
   .slider {
     /* width: 100%; */
     /* height: 60vh; */
@@ -776,6 +791,11 @@ span.point {
     font-size: 1.3rem;
   }
 
+  .mark h3, .mark h4{
+    font-size: 1.2rem;
+  }
+  
+
   .timeline {
     font-size: 1.2rem;
   }
@@ -793,13 +813,32 @@ span.point {
   }
 
   #ticket-bg {
-    width: 50rem;
-    height:50rem;
+    width: 40rem;
+    height:40rem;
   }
   #red-cir-bg{
-    width: 10rem;
-    height: 10rem;
-    right:10rem;
+    width: 20rem;
+    height: 20rem;
+    right:5rem;
+  }
+
+  #blue-cir-bg{
+    width: 15rem;
+    height: 15rem;
+    top: 185rem;
+    left:10rem;
+  }
+
+  #blue-cir-2-bg{
+    width: 20rem;
+    height: 20rem;
+    top: 65rem;
+    left:10rem;
+  }
+
+
+  #timeline-bg {
+    top: 455rem;
   }
 
   #palm-red-bg {
@@ -809,12 +848,13 @@ span.point {
     width: 10rem;
     height: 10rem;
     left: 15rem;
+    top: 560rem;
     z-index: 1;
   }
 
   #red-flower-bg{
     left:-30rem;
-    top: 220rem;
+    top: 240rem;
   }
 
   #red-rec-bg{
@@ -830,7 +870,20 @@ span.point {
     width: 40rem;
     height: 22.5rem;
     left: -18rem;
-    top: 433rem;
+    top: 459rem;
+    z-index: 0;
+  }
+
+  #corona-bg{
+    top: 880rem;
+  }
+
+  #A-bg {
+    top: 950rem;
+  }
+
+  #credit h4 {
+    font-size: 1.2rem;
   }
 } 
 
@@ -975,4 +1028,14 @@ a.btn-3d:hover {
   /* only bar menu page */
   .ajust-space-p {
     margin-bottom: 0;
+  }
+
+  /* CREDIT */
+  .credit-catg {
+    background: var(--accentred);
+    color: var(--basecolor);
+  }
+  .border-credit{
+    border: solid 3px  #e32f38;
+    color: #e32f38;
   }
